@@ -36,3 +36,13 @@ What I did?
 Created a ```config.properties``` file and added details like url,waits units,browser name.
 Then in ```Baseclass.java``` file setup and teardown are added.
 Then in ```dummyclass.java``` just tested with an assert statement for title.
+
+## May7
+
+Did a Refactoring by having separate methods for each loadfile,configure browser,launch browser,used static waits as LockSupport.parknanos then called those methods in a separate mathod.
+Then configured testng.xml file with suite name,test name,class name.
+so far used @beforesuite (loadconfig() from properties), @beforemethod and @aftermethod.
+
+Then created 2 dummyclass and ran it in testng it got failed because baseclass has prop as protected.Debugged it the prop was showing null. so declared that static so this prop got shared.
+```protected static Properties prop;```
+
