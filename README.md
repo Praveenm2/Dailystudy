@@ -46,3 +46,15 @@ so far used @beforesuite (loadconfig() from properties), @beforemethod and @afte
 Then created 2 dummyclass and ran it in testng it got failed because baseclass has prop as protected.Debugged it the prop was showing null. so declared that static so this prop got shared.
 ```protected static Properties prop;```
 
+## May12
+
+Got to know about ```ActionDriver class``` setup and created reusable methods in it 
+
+Overview: Designed to handle common browser interactions. We write action related methods in a single class.
+click(),enterValue() like that. These are encapsulated when we call in other classes because we don't know the implementation details.
+We can reuse all this in page classes as part of POM. Used By by locators for performance pov as it will locate the elements in runtime not like webelement which stores the element and locate it later on.
+
+What i did? getter and setter method in Baseclass.for get and set the webdriver.
+Then declared variables in ```ActionDriver class``` driver and wait.Initialized it by creating a constructor.
+
+Added all action methods with try catch block surrounding it.
