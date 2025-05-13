@@ -58,3 +58,11 @@ What i did? getter and setter method in Baseclass.for get and set the webdriver.
 Then declared variables in ```ActionDriver class``` driver and wait.Initialized it by creating a constructor.
 
 Added all action methods with try catch block surrounding it.
+
+## May13
+
+Implemented POM- Loginpage and Homepage class
+created By class and have the locators in the private variable.
+Then what and all i want to add in Login like sendkeys,clicking submit for those i called the actionmethods which i mentioned in actiondriver.
+Both in login page and homepage we need to initialize actionDriver.
+Each web page (or component) is represented by a Java class.
