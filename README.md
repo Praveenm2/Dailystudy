@@ -66,3 +66,7 @@ created By class and have the locators in the private variable.
 Then what and all i want to add in Login like sendkeys,clicking submit for those i called the actionmethods which i mentioned in actiondriver.
 Both in login page and homepage we need to initialize actionDriver.
 Each web page (or component) is represented by a Java class.
+
+## May14
+
+Created loginpageTest and homepageTest and ran those and got the flow from ```testclass > pageclass > actiondrive > baseclass```
