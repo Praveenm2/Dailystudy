@@ -70,3 +70,8 @@ Each web page (or component) is represented by a Java class.
 ## May14
 
 Created loginpageTest and homepageTest and ran those and got the flow from ```testclass > pageclass > actiondrive > baseclass```
+
+## May15
+
+SingletonSet - using this we had reduced number of actiondriver instance getting created.Previously it was created twice.Now to 1.
+We had got to know this by debugging it.
