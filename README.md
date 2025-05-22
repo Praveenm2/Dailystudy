@@ -75,3 +75,6 @@ Created loginpageTest and homepageTest and ran those and got the flow from ```te
 
 SingletonSet - using this we had reduced number of actiondriver instance getting created.Previously it was created twice.Now to 1.
 We had got to know this by debugging it.
+Singleton mainly refers only one instance of class is getting instantiated and used globally.
+```if (driver == null)```
+```if(actionDriver == null)```
