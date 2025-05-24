@@ -79,7 +79,10 @@ Singleton mainly refers only one instance of class is getting instantiated and u
 ```if (driver == null)```
 ```if(actionDriver == null)```
 ## May 16
-Logging is a way to record information about application execution.Its an Industry standard logging library for java.Log4j2 is the latest.Had added the log4j2 package and its api package from maven in the pom.xml
+LOG4J-Logging is a way to record information about application execution.Its an Industry standard logging library for java.Log4j2 is the latest.Had added the log4j2 package and its api package from maven in the pom.xml
 Helps in debugging,monitoring and trouble shooting.
 Then in baseclass added this as static final ```public static final Logger logger = LoggerManager.getLogger(BaseClass.class);```
 and this in Action driver ```public static final Logger logger=BaseClass.logger;```
+
+## May 24
+```getElementDescription``` using this method we go to know how the flow is and mainly got to know about which element it interacted.We did this by getting the dom property using e.g : ``` element.getDomAttribute("name");``` like this what attribute is available we get that.
