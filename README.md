@@ -79,10 +79,19 @@ Singleton mainly refers only one instance of class is getting instantiated and u
 ```if (driver == null)```
 ```if(actionDriver == null)```
 ## May 16
-LOG4J-Logging is a way to record information about application execution.Its an Industry standard logging library for java.Log4j2 is the latest.Had added the log4j2 package and its api package from maven in the pom.xml
+LOG4J-Logging is a way to record information about application execution.Its an Industry standard logging library for java.Log4j2 is the latest.Had added the log4j2 package and its api package from maven in the pom.xml. Created log4j2.xml file also.
 Helps in debugging,monitoring and trouble shooting.
 Then in baseclass added this as static final ```public static final Logger logger = LoggerManager.getLogger(BaseClass.class);```
 and this in Action driver ```public static final Logger logger=BaseClass.logger;```
 
 ## May 24
 ```getElementDescription``` using this method we go to know how the flow is and mainly got to know about which element it interacted.We did this by getting the dom property using e.g : ``` element.getDomAttribute("name");``` like this what attribute is available we get that.
+
+## May 25
+```Parallel Execution``` is the simultaneous execution of multiple test cases on different threads,browser or machines to save time.Had used parallel as methods,casses,tests.We used threadlocal ```private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+	private static ThreadLocal<ActionDriver> actionDriver = new ThreadLocal<>();```
+Thread Local - java utility class that provide thread-local variables.Each thread accessing a ThreadLocal variable get its own,isolated copy of the variable which is not shared with other threads.
+
+Challenges we faced is some tests got tried to overlap with the threads. So used synchronisation in the setup and teardown methods.
+when methods are synchronised in baseclass and parallel execution by methods for 5threads, 5 separate threads are created for 4classes
+when methods are synchronised in baseclass and parallel execution by classes for 5threads, 4 separate threads are created for 4classes one is shared by 2 tc
