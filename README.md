@@ -91,7 +91,7 @@ and this in Action driver ```public static final Logger logger=BaseClass.logger;
 ```Parallel Execution``` is the simultaneous execution of multiple test cases on different threads,browser or machines to save time.Had used parallel as methods,casses,tests.We used threadlocal ```private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	private static ThreadLocal<ActionDriver> actionDriver = new ThreadLocal<>();```
 Thread Local - java utility class that provide thread-local variables.Each thread accessing a ThreadLocal variable get its own,isolated copy of the variable which is not shared with other threads.
-
+In testng.xml file we need to give this in the suite ```<suite name="OrangeHRMSuite" parallel="tests" thread-count="5">```
 Challenges we faced is some tests got tried to overlap with the threads. So used synchronisation in the setup and teardown methods.
 when methods are synchronised in baseclass and parallel execution by methods for 5threads, 5 separate threads are created for 4classes
 when methods are synchronised in baseclass and parallel execution by classes for 5threads, 4 separate threads are created for 4classes one is shared by 2 tc
