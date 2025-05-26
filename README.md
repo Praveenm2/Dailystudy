@@ -95,3 +95,7 @@ In testng.xml file we need to give this in the suite ```<suite name="OrangeHRMSu
 Challenges we faced is some tests got tried to overlap with the threads. So used synchronisation in the setup and teardown methods.
 when methods are synchronised in baseclass and parallel execution by methods for 5threads, 5 separate threads are created for 4classes
 when methods are synchronised in baseclass and parallel execution by classes for 5threads, 4 separate threads are created for 4classes one is shared by 2 tc
+
+## May 26
+Cross Browser testing- process of verifying that your web application works as expected across different web browsers,devices,and operating systems.
+Taking the values from config.properties file and launched the matching browser.
