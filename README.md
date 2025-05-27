@@ -99,3 +99,7 @@ when methods are synchronised in baseclass and parallel execution by classes for
 ## May 26
 Cross Browser testing- process of verifying that your web application works as expected across different web browsers,devices,and operating systems.
 Taking the values from config.properties file and launched the matching browser.
+
+
+## May 27
+Extent Reports - Very basic into about extent report as i added 2 plugins aven stack extent report and common io.Then created a separate class for extent reports
