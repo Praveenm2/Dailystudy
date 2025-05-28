@@ -103,3 +103,6 @@ Taking the values from config.properties file and launched the matching browser.
 
 ## May 27
 Extent Reports - Very basic into about extent report as i added 2 plugins aven stack extent report and common io.Then created a separate class for extent reports
+
+## May 28
+Extent Report - Created all the methods like getreporter,end test,log test,start test and necessary screenshot codings everything in the ExtentManager class.
