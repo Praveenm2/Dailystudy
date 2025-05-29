@@ -106,3 +106,6 @@ Extent Reports - Very basic into about extent report as i added 2 plugins aven s
 
 ## May 28
 Extent Report - Created all the methods like getreporter,end test,log test,start test and necessary screenshot codings everything in the ExtentManager class.
+
+## May 29
+Extent Report - Added all methods in ExtentManager class then added the extentmanager related methods in Action driver,base class,all test classes
