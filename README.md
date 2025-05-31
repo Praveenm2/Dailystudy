@@ -112,4 +112,4 @@ Extent Report - Added all methods in ExtentManager class then added the extentma
 
 ## May 31
 ITestListeners - allow to listen to specific events in a test lifecycle.(start,pass,fail,skip)
-Created a Testlistener class and implements ITestlistener. commented all 
+Created a Testlistener class and implements ITestlistener. commented all methods related to extentmanager start. As we brought Itestlisteners
