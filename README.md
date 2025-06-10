@@ -16,6 +16,7 @@ config.properties
 Why needed: All critical settings in one place for easy maintenance, avoid hardcoding values,Easy mainatianance,reusability,update settings without modifying the code
 Flexibility we can switch between environments
 - Configuration file stores key-value pairs
+
 Examples of properties stored:
 - Browser type,URL,Waits
 
@@ -113,3 +114,17 @@ Extent Report - Added all methods in ExtentManager class then added the extentma
 ## May 31
 ITestListeners - allow to listen to specific events in a test lifecycle.(start,pass,fail,skip)
 Created a Testlistener class and implements ITestlistener. commented all methods related to extentmanager start. As we brought Itestlisteners
+
+## June 10
+```Data Driven Testing``` passing test data from excel,csv. Need to add apache.poi, poi.ooxml packages need to be added in pom.xml, created a test data i.e excel
+
+We need to create a class named ExcelReaderUtility and import these following packages in the method 	public static List<String[]> getSheetData(String filePath, String sheetName)
+-import org.apache.poi.ss.usermodel.Sheet;
+-import org.apache.poi.ss.usermodel.Cell;
+-import org.apache.poi.ss.usermodel.DateUtil;
+-import org.apache.poi.ss.usermodel.Row;
+-import org.apache.poi.ss.usermodel.Workbook;
+-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+Then create a method to convert whatever comes from excel to string
+
+create one more class DataProviders fetch the value from previously mentioned class and store it in a dynamic array using dataproviders.
