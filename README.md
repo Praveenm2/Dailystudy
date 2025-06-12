@@ -128,3 +128,6 @@ We need to create a class named ExcelReaderUtility and import these following pa
 Then create a method to convert whatever comes from excel to string
 
 create one more class DataProviders fetch the value from previously mentioned class and store it in a dynamic array using dataproviders.
+
+## June 12
+Gone through``` Database Testing```
